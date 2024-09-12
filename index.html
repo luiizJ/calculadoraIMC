@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/styles/styles.css" />
+    <link rel="stylesheet" href="assets/styles/media.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>CalculadoraIMC</title>
+  </head>
+  <body>
+    <main id="container">
+      <section id="image">
+        <img src="assets/images/image.svg" alt="PersonTrainer" />
+      </section>
+
+      <section id="calculator">
+        <form id="forma">
+          <h1 id="title">Calculadora - IMC</h1>
+
+          <div class="input-box">
+            <label for="weight"> Peso Em KG </label>
+            <div class="input-fild">
+              <i class="fa-solid fa-weight-hanging"></i>
+              <input type="number" id="weight" step="0.01" required />
+              <span>KG</span>
+            </div>
+          </div>
+
+          <div class="input-box">
+            <label for="height"> Altura em metros </label>
+            <div class="input-fild">
+              <i class="fa-solid fa-ruler"></i>
+              <input type="number" id="height" step="0.01" required />
+              <span>M</span>
+            </div>
+          </div>
+
+          <button id="calculate" type="submit">Calcular</button>
+        </form>
+
+        <div id="infos" class="hidden">
+          <div id="results">
+            <div id="bmi">
+              <span id="value"></span>
+              <span>Seu IMC</span>
+            </div>
+            <div id="description">
+              <span></span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="assets/scripts/scripts.js"></script>
+  </body>
+</html>

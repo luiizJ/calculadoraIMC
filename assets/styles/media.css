@@ -1,0 +1,17 @@
+@media screen and (max-width: 1024px) {
+  #image {
+    display: none;
+  }
+}
+@media screen and (max-width: 500px) {
+  #container {
+    width: 100%;
+    height: 100%;
+  }
+  #calculate {
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+    justify-content: center;
+  }
+}

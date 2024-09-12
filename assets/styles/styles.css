@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #111111;
+}
+#container {
+  display: flex;
+  align-items: center;
+  gap: 3.5rem;
+}
+#image img {
+  width: 31rem;
+}
+
+#calculator {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 2rem;
+  color: #f8fafc;
+  background-color: #262626;
+  border-radius: 8px;
+}
+
+#forma {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+#title {
+  font-size: 2.25rem;
+  position: relative;
+}
+
+#title::after {
+  position: absolute;
+  content: "";
+  background-color: #a32616;
+  width: 8rem;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  border-radius: 3px;
+}
+
+.input-box label {
+  font-size: 1rem;
+  color: #f8fafc;
+  font-weight: 500;
+}
+
+.input-fild {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #3f3f46;
+  padding: 0.3rem;
+  border-radius: 3px;
+  margin-top: 3px;
+}
+
+.input-fild span,
+.input-fild i {
+  color: #cbd5e1;
+  font-size: 1.3rem;
+  padding: 0.6rem 1rem;
+}
+
+.input-fild input {
+  background-color: transparent;
+  border: none;
+  width: 100%;
+  color: #f8fafc;
+  font-size: 1.3rem;
+  padding: 0 0.5rem;
+}
+.input-fild input::-webkit-outer-spin-button,
+.input-fild input::-webkit-inner-spin-button {
+  appearance: none;
+}
+
+.input-fild input:focus {
+  outline: none;
+}
+
+#calculate {
+  border: none;
+  font-size: 1.25rem;
+  font-weight: bolder;
+  background-color: #f72c11;
+  color: #ffecec;
+  padding: 0.5rem 0;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+#results {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  border-top: 1px solid #f72c11;
+  padding: 0.75rem 0;
+}
+#bmi {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 2.25rem;
+}
+#bmi span:last-child {
+  font-size: 0.875rem;
+  color: #cbd5e1;
+}
+#descrciption {
+  width: 15.5rem;
+}
+.hidden {
+  display: none;
+}
